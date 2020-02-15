@@ -93,6 +93,17 @@
 	margin: 5px 0 5px 0;
 }
 
+.amenities h4 {
+	max-height: 51px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.amenity_checks {
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 600px) {
 
 	.container .filters {
