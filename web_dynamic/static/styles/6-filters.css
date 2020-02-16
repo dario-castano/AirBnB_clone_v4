@@ -72,6 +72,12 @@
 	display: list-item;
 }
 
+.amenities h4 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .container .filters .popover {
 	max-height: 300px;
 	overflow: scroll;
@@ -91,6 +97,12 @@
 
 .container .filters .popover li {
 	margin: 5px 0 5px 0;
+	display: inline-block;
+	width: max-content;
+}
+
+.container .filters .popover li input{
+	margin-right: 10px;
 }
 
 @media screen and (max-width: 600px) {
