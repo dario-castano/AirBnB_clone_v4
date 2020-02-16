@@ -76,6 +76,7 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	max-height: 51px;
 }
 
 .container .filters .popover {
@@ -101,7 +102,7 @@
 	width: max-content;
 }
 
-.container .filters .popover li input{
+#amenity-check {
 	margin-right: 10px;
 }
 

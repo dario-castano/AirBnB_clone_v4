@@ -1,7 +1,7 @@
 const checkedAmenities = {};
 $(document).ready(function () {
   $('input:checkbox').on('click', function () {
-    const { id, name } = $(this).parent().data();
+    const { id, name } = $(this).data();
     if (this.checked) {
       checkedAmenities[id] = name;
     } else {
