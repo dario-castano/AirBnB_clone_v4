@@ -14,26 +14,27 @@ $(document).ready(function () {
   });
 
   $.getJSON('http://0.0.0.0:5001/api/v1/status/', function (data) {
-    if (data.status === "OK") $('#api_status').addClass('available');
+    if (data.status === 'OK') $('#api_status').addClass('available');
   });
 
   $.ajax({
-    'type': 'POST',
-    'contentType': 'application/json',
-    'url': 'http://0.0.0.0:5001/api/v1/places_search',
-    'data': '{}',
-    'dataType': 'json',
-    'success': function (data, _, _) {
-      for (place of data) {
-        $.getJSON(`http://0.0.0.0:5001/api/v1/users/${place.user_id}`, function (user) {
-          $('.places').append(setPlaces(place, user));
-        });
+    type: 'POST',
+    contentType: 'application/json',
+    url: 'http://0.0.0.0:5001/api/v1/places_search',
+    data: '{}',
+    dataType: 'json',
+    success: function (data) {
+      for (const place of data) {
+        $.getJSON(
+          `http://0.0.0.0:5001/api/v1/users/${place.user_id}`,
+          (user) => $('.places').append(setPlaces(place, user))
+        );
       }
     }
   });
 });
 
-function setPlaces(place, user) {
+function setPlaces (place, user) {
   return `<article>
   <div class="title">
     <h2>${place.name}</h2>
@@ -58,12 +59,12 @@ function setPlaces(place, user) {
       ${place.number_bathrooms} Bathroom
     </div>
   </div>
-  
+
   <div class="user">
     <strong>Owner: ${user.first_name} ${user.last_name}</strong>
   </div>
   <div class="description">
     ${place.description}
   </div>
-</article>`
+</article>`;
 }
