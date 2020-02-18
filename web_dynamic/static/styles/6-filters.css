@@ -79,6 +79,13 @@
 	max-height: 51px;
 }
 
+.locations h4 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-height: 51px;
+}
+
 .container .filters .popover {
 	max-height: 300px;
 	overflow: scroll;
@@ -102,7 +109,27 @@
 	width: max-content;
 }
 
+.container .filters .locations .cities-popover li {
+	margin: 5px 0 5px 0;
+	display: inline-block;
+	width: max-content;
+}
+
+.container .filters .locations h2 {
+	margin: 5px 0 5px 0;
+	display: inline-block;
+	width: max-content;
+}
+
 #amenity-check {
+	margin-right: 10px;
+}
+
+#state-check {
+	margin-right: 10px;
+}
+
+#city-check {
 	margin-right: 10px;
 }
 
