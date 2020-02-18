@@ -2,6 +2,8 @@
 
 # AirBnB Clone: Phase # 3
 
+![alt](https://img.shields.io/github/issues/dario-castano/AirBnB_clone_v4) ![alt](https://img.shields.io/github/forks/dario-castano/AirBnB_clone_v4) ![alt](https://img.shields.io/github/stars/dario-castano/AirBnB_clone_v4) ![alt](https://img.shields.io/github/license/dario-castano/AirBnB_clone_v4) ![alt](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fdario-castano%2FAirBnB_clone_v4)
+
 ## Description
 
 Project attempts to clone the the AirBnB application and website, including the
